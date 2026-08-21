@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Steven Enis — Photographer</title>
+<meta name="description" content="Steven Enis is a photographer shooting headshots, models and commercial spaces on location worldwide.">
+<!-- ============================================================
+     STEVEN ENIS — PHOTOGRAPHER
+     One-file site. Nothing external except the fonts below.
+
+     >> YOUR PHOTOS <<
+     Your 20 photos are embedded directly in this file (see the PORTFOLIO
+     section), grouped by palette - nothing else to host, it's all in here.
+     To add or swap photos later, just send them over.
+
+     >> THINGS TO PERSONALISE (search for the word EDIT) <<
+     - Your email + Instagram handle (Contact section + footer)
+     - The list of locations in the "On location in" marquee
+     - Any of the wording
+     ============================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600;700;800;900&family=Hanken+Grotesk:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- scroll progress -->
+<div class="scanline" id="scanline"></div>
+
+<!-- VIEWFINDER OVERLAY (the signature) -->
+<div class="viewfinder" aria-hidden="true">
+  <span class="vf-bracket tl"></span>
+  <span class="vf-bracket tr"></span>
+  <span class="vf-bracket bl"></span>
+  <span class="vf-bracket br"></span>
+
+  <div class="hud tl">SE · PHOTO</div>
+  <div class="hud tr"><span class="live" id="frameCount">001</span>&nbsp;/&nbsp;036</div>
+  <div class="hud bl">SEC · <span class="live" id="sectionName">HOME</span></div>
+  <div class="hud br"><span class="dot"></span> IN FRAME</div>
+</div>
+
+<!-- cursor focus reticle (desktop) -->
+<div class="reticle" id="reticle"><span></span></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#home" class="brand" aria-label="Steven Enis — home">
+    Steven Enis <small>PHOTOGRAPHER</small>
+  </a>
+  <nav class="links" aria-label="Primary">
+    <a href="#home"      data-nav><span class="idx">01</span>Home</a>
+    <a href="#about"     data-nav><span class="idx">02</span>About</a>
+    <a href="#approach"  data-nav><span class="idx">03</span>Approach</a>
+    <a href="#portfolio" data-nav><span class="idx">04</span>Portfolio</a>
+    <a href="#contact"   data-nav><span class="idx">05</span>Contact</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home"      data-mnav><span class="idx">01</span>Home</a>
+  <a href="#about"     data-mnav><span class="idx">02</span>About</a>
+  <a href="#approach"  data-mnav><span class="idx">03</span>Approach</a>
+  <a href="#portfolio" data-mnav><span class="idx">04</span>Portfolio</a>
+  <a href="#contact"   data-mnav><span class="idx">05</span>Contact</a>
+</div>
+
+
+<!-- ==================== HERO ==================== -->
+<section class="hero" id="home">
+  <p class="hero__eyebrow"><span>Photographer</span></p>
+
+  <h1 class="hero__name">
+    <span class="line"><span class="line__inner">Steven</span></span>
+    <span class="line"><span class="line__inner">Enis</span></span>
+  </h1>
+
+  <div class="hero__foot">
+    <p class="hero__statement">
+      <b>Headshots, models, and commercial spaces</b> — photographed with an
+      unforced eye.
+    </p>
+    <div class="scrollcue">
+      <span class="bar"></span>
+      Scroll to see
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== ABOUT ==================== -->
+<section class="about" id="about">
+  <p class="eyebrow" data-reveal>About</p>
+  <div class="about__grid">
+    <h2 class="about__lead" data-reveal>
+      Whatever catches the eye <em>earns a frame.</em>
+    </h2>
+
+    <div class="about__body">
+      <div data-reveal style="--d:80ms">
+        <p>
+          Steven Enis is a photographer working across portraits, fashion, and
+          commercial spaces. He shoots headshots that look like the person on their
+          best ordinary day, models and lookbooks with a natural edge, and interiors
+          and brand work that need to feel like somewhere real — on location, worldwide.
+        </p>
+        <p>
+          The instinct behind it was built on the street: reading light on the move,
+          and catching the moment that only happens once. That same eye goes into every
+          commission — unforced, quick, and honest to whoever, or whatever, is in front
+          of the lens.
+        </p>
+      </div>
+
+      <!-- Steven's about portrait (embedded below). To change it later, just send a new photo. -->
+      <div class="portrait" data-reveal style="--d:160ms">
+        <img src="images/steven-portrait.jpg" alt="Steven Enis">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== APPROACH ==================== -->
+<section class="approach" id="approach">
+  <p class="eyebrow" data-reveal>How I work</p>
+  <div class="approach__grid">
+    <div class="approach__cell" data-reveal>
+      <span class="approach__k">Direction</span>
+      <h3 class="approach__t">At ease</h3>
+      <p class="approach__d">Quick to read a room and easy to shoot with, so people loosen up and the frame looks like them — not a pose.</p>
+    </div>
+    <div class="approach__cell" data-reveal style="--d:120ms">
+      <span class="approach__k">Light</span>
+      <h3 class="approach__t">As found</h3>
+      <p class="approach__d">Works with the light that's there and shapes it when a shoot needs it — flattering for faces, honest for spaces.</p>
+    </div>
+    <div class="approach__cell" data-reveal style="--d:240ms">
+      <span class="approach__k">Timing</span>
+      <h3 class="approach__t">The moment</h3>
+      <p class="approach__d">A street-trained sense for the frame that only happens once, brought to every brief and deadline.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== CITIES (marquee) ==================== -->
+<!-- EDIT: these are the places you work / have shot. Add or remove freely. -->
+<section class="cities" id="cities" aria-label="Locations">
+  <p class="eyebrow" data-reveal>On location in</p>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__set">
+      <span class="marquee__item">Lisbon</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Barcelona</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Los&nbsp;Angeles</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Hong&nbsp;Kong</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Phuket</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Algarve</span><span class="marquee__dot"></span>
+      <span class="marquee__item">London</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Tokyo</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Kyoto</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Rome</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Madrid</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Menton</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Nice</span><span class="marquee__dot"></span>
+    </div>
+    <div class="marquee__set" aria-hidden="true">
+      <span class="marquee__item">Lisbon</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Barcelona</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Los&nbsp;Angeles</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Hong&nbsp;Kong</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Phuket</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Algarve</span><span class="marquee__dot"></span>
+      <span class="marquee__item">London</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Tokyo</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Kyoto</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Rome</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Madrid</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Menton</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Nice</span><span class="marquee__dot"></span>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true" style="margin-top:6px">
+    <div class="marquee__set">
+      <span class="marquee__item ghost">Nice</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Menton</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Madrid</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Rome</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Kyoto</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Tokyo</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">London</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Algarve</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Phuket</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Hong&nbsp;Kong</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Los&nbsp;Angeles</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Barcelona</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Lisbon</span><span class="marquee__dot"></span>
+    </div>
+    <div class="marquee__set" aria-hidden="true">
+      <span class="marquee__item ghost">Nice</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Menton</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Madrid</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Rome</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Kyoto</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Tokyo</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">London</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Algarve</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Phuket</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Hong&nbsp;Kong</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Los&nbsp;Angeles</span><span class="marquee__dot"></span>
+      <span class="marquee__item">Barcelona</span><span class="marquee__dot"></span>
+      <span class="marquee__item ghost">Lisbon</span><span class="marquee__dot"></span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== PORTFOLIO ==================== -->
+<!-- Photos embedded as base64 below, grouped by palette. To add or swap images later, just send them over. -->
+<section class="portfolio" id="portfolio">
+  <div class="portfolio__head" data-stagger="120">
+    <h2 class="portfolio__title" data-reveal>Portfolio</h2>
+    <p class="portfolio__note" data-reveal style="--d:120ms">
+      Grouped by palette — black &amp; white, blue hour, sun-faded, and gold — with the
+      people work kept together. New frames go up as they're made.
+    </p>
+  </div>
+
+  <div class="set">
+    <div class="set__head" data-stagger="110">
+      <span class="set__name" data-reveal>Black &amp; white</span>
+      <span class="set__meta" data-reveal>04 · Tokyo, Hong Kong</span>
+    </div>
+    <div class="grid">
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-01.jpg" alt="A near-empty zebra crossing before a karaoke building, black and white, Shibuya, Tokyo" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 01</span><span>Shibuya, Tokyo</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-02.jpg" alt="A hand-lettered &#x27;don&#x27;t drink on the street&#x27; sign on a fluted column, black and white, Shibuya" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 02</span><span>Shibuya, Tokyo</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-03.jpg" alt="A vintage Mercedes coupe parked on a Hong Kong street, black and white" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 03</span><span>Hong Kong</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-04.jpg" alt="A double-decker bus on a misty Hong Kong avenue below the peak, black and white" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 04</span><span>Hong Kong</span></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="set">
+    <div class="set__head" data-stagger="110">
+      <span class="set__name" data-reveal>People</span>
+      <span class="set__meta" data-reveal>06 · Portraits</span>
+    </div>
+    <div class="grid">
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-05.jpg" alt="Two men at night, one drawing on a cigarette, close black-and-white double portrait" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 05</span><span>Late night</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-06.jpg" alt="A man in a cardigan seated on a dim staircase, full-length black-and-white portrait" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 06</span><span>Stairwell</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-07.jpg" alt="A woman in a black top glancing to the side in soft indoor light, black-and-white portrait" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 07</span><span>At home</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-08.jpg" alt="A singer laughing into the mic and pointing to the crowd at a small live show, black and white" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 08</span><span>Live show</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-09.jpg" alt="A man in a white shirt pouring three pour-over coffees, black and white, Tokyo" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 09</span><span>Tokyo, Japan</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-10.jpg" alt="A woman in a kimono holding a lace fan before a temple wall and garden, black and white, Kyoto, Japan" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 10</span><span>Kyoto, Japan</span></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="set">
+    <div class="set__head" data-stagger="110">
+      <span class="set__name" data-reveal>Blue hour</span>
+      <span class="set__meta" data-reveal>03 · Japan</span>
+    </div>
+    <div class="grid">
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-11.jpg" alt="A lone figure passing a glowing izakaya storefront at night, Shibuya, Tokyo" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 11</span><span>Shibuya, Tokyo</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-12.jpg" alt="A tuned blue coupe at a night car meet under Shibuya&#x27;s towers, Tokyo" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 12</span><span>Shibuya, Tokyo</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-13.jpg" alt="Blue-lit street cars beside Tokyu Plaza at night, Shibuya, Tokyo" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 13</span><span>Shibuya, Tokyo</span></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="set">
+    <div class="set__head" data-stagger="110">
+      <span class="set__name" data-reveal>Sun-faded</span>
+      <span class="set__meta" data-reveal>08 · Spain, France, Portugal</span>
+    </div>
+    <div class="grid">
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-14.jpg" alt="Crowds on the mosaic staircase below the columned hall at Park Guell, Barcelona" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 14</span><span>Park Guell, Barcelona</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-15.jpg" alt="A man checks his phone against a graffiti wall in a plant-filled Trastevere alley, Rome" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 15</span><span>Trastevere, Rome</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-16.jpg" alt="Gaudi&#x27;s mosaic gatehouse rising above the crowds at Park Guell, Barcelona" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 16</span><span>Park Guell, Barcelona</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-17.jpg" alt="Pastel apartment blocks stacked up a Lisbon hillside above a noodle shop, Portugal" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 17</span><span>Lisbon, Portugal</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-18.jpg" alt="Colourful festival bunting casting geometric shadows over a Madrid street, Spain" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 18</span><span>Lavapies, Madrid</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-19.jpg" alt="Customers at the counter of an open-fronted butcher shop, Tokyo, Japan" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 19</span><span>Tokyo, Japan</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-20.jpg" alt="Sunbathers and umbrellas on a golden cove below jungle-covered hills, Thailand" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 20</span><span>Phuket, Thailand</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-21.jpg" alt="Swimmers and sunbathers on a pebble beach beside a turquoise bay, Villefranche-sur-Mer" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 21</span><span>Villefranche-sur-Mer</span></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="set">
+    <div class="set__head" data-stagger="110">
+      <span class="set__name" data-reveal>Gold &amp; amber</span>
+      <span class="set__meta" data-reveal>07 · Portugal, France, Japan</span>
+    </div>
+    <div class="grid">
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-22.jpg" alt="Sun umbrellas scattered across a golden Algarve beach below ochre cliffs, Portugal" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 22</span><span>Praia da Rocha, Algarve</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-23.jpg" alt="Beachgoers among towering golden rock stacks on an Algarve beach, Portugal" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 23</span><span>Algarve, Portugal</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-24.jpg" alt="A yellow baroque church tower above sunlit ochre walls, Menton, France" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 24</span><span>Menton, France</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-25.jpg" alt="A yellow-awninged perfume stall in warm afternoon light, Menton, France" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 25</span><span>Menton, France</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-26.jpg" alt="The Golden Pavilion mirrored in its pond and framed by autumn maple, Kyoto, Japan" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 26</span><span>Kinkaku-ji, Kyoto</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-27.jpg" alt="Vermilion tiers of a wooden pagoda against a pale sky, Kyoto, Japan" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 27</span><span>Kiyomizu-dera, Kyoto</span></figcaption>
+      </figure>
+      <figure class="frame" data-reveal>
+        <div class="frame__media">
+          <img src="images/photo-28.jpg" alt="Rows of vermilion torii gates inscribed with black calligraphy, Fushimi Inari, Kyoto" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="frame__cap"><span class="frame__no">Frame 28</span><span>Fushimi Inari, Kyoto</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== CONTACT ==================== -->
+<section class="contact" id="contact">
+  <p class="eyebrow" data-reveal>Get in touch</p>
+  <!-- EDIT your email below (both the visible text and the mailto: link) -->
+  <h2 class="contact__big" data-reveal>
+    <a href="mailto:photography@stevenenis.com">photography@stevenenis.com</a>
+  </h2>
+  <p class="portfolio__note" data-reveal style="--d:100ms">
+    For bookings, commissions, prints, or just to say hello.
+  </p>
+
+  <!-- EDIT your social links -->
+  <div class="contact__row" data-reveal style="--d:160ms">
+    <a href="https://instagram.com/stevenaubrey_" target="_blank" rel="noopener">Instagram · @stevenaubrey_</a>
+    <a href="mailto:photography@stevenenis.com">Email</a>
+    <span>Available worldwide</span>
+  </div>
+</section>
+
+<footer class="foot">
+  <span>© <span id="year">2026</span> Steven Enis</span>
+  <span>Photographer</span>
+  <span>All rights reserved</span>
+</footer>
+
+
+<!-- ==================== LIGHTBOX ==================== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lightbox__close" id="lbClose" aria-label="Close (Esc)">✕</button>
+  <button class="lightbox__nav prev" id="lbPrev" aria-label="Previous photo">‹</button>
+  <img id="lbImg" src="" alt="">
+  <button class="lightbox__nav next" id="lbNext" aria-label="Next photo">›</button>
+  <div class="lightbox__meta">
+    <span class="lightbox__cap" id="lbCap"></span>
+    <span class="lightbox__count" id="lbCount"></span>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
