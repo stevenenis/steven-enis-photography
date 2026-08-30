@@ -422,8 +422,8 @@
      --------------------------------------------------------- */
   .cities{ border-top:1px solid var(--line); padding-left:0; padding-right:0; overflow:hidden; }
   .cities .eyebrow{ padding:0 var(--pad); }
-  .marquee{ display:flex; width:max-content; will-change:transform; animation: slide 40s linear infinite; }
-  .marquee:nth-child(3){ animation-duration:52s; animation-direction:reverse; opacity:0.4; }
+  .marquee{ display:flex; width:max-content; will-change:transform; animation: slide 90s linear infinite; }
+  .marquee:nth-child(3){ animation-duration:115s; animation-direction:reverse; opacity:0.4; }
   .marquee__set{ display:flex; align-items:center; }
   .marquee__item{
     font-family:var(--f-display); font-weight:700; text-transform:uppercase;
